@@ -1,5 +1,8 @@
 simExTargId 
 ===========
+A package created by William Edmands. Supported now by Josie Hayes.
+
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.806838.svg)](https://doi.org/10.5281/zenodo.806838) Development version 0.2.1 archived on the Zenodo repository. 
 
 Performs simultaneous data conversion, preprocessing and statistical analysis and instrument stoppage/signal drift monitoring throughout the course of a metabolomic profiling experiment. The **simExTargId** package performs raw data to mzXML conversion ([MSConvert](http://proteowizard.sourceforge.net/)), peak-picking, retention time alignment, grouping ([xcms](https://bioconductor.org/packages/release/bioc/html/xcms.html)), ESI adducts/in-source fragment artefact identification ([CAMERA](https://bioconductor.org/packages/release/bioc/html/CAMERA.html)), peak table output pre-processing, automatic outlier detection by PCA and automatic  statistical analysis dependent on co-variates supplied ([MetMSLine](https://github.com/WMBEdmands/MetMSLine)). Signal drift monitoring and possible MS2 target list identification is facilitated during a metabolomic profiling experiment by two shiny user interfaces. An email notification system using the [sendmailR](https://cran.r-project.org/web/packages/sendmailR/index.html)
@@ -9,7 +12,7 @@ Installation
 ===============
 The latest development version and all package dependencies can be installed with one-line of code directly from GitHub using the devtools package. First ensure devtools is installed, instructions can be found here: https://github.com/hadley/devtools
 ```{r}
-devtools::install_github('WMBEdmands/simExTargId', dependencies=c("Depends", "Imports", "Suggests"))
+devtools::install_github('JosieLHayes/simExTargId', dependencies=c("Depends", "Imports", "Suggests"))
 ```
 
 Vignette
